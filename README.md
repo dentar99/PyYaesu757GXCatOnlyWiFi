@@ -32,6 +32,11 @@ TTL converter.  Don't wire the RS-232 straight to the circuit.
 The FT757-GX speaks at one speed: 4800 baud.  Use stty or some such
 to set your port speed before starting the program.
 
+This program differs from the non-WiFi version in that it attaches
+to a host/port on TCP/IP, which accepts and relays to serial, 
+presumably a Pi or Arduino on your network, whose TX/GND/5V pins
+are hooked to said TIL111 serial interface.
+
 The connector on the back of the YAESU FT-757GX is called a
 3-pin JST-XH with 2.54mm pitch
 
